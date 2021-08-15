@@ -27,7 +27,7 @@ Basic knowledge about React:
 
 ## Live site
 
-[Live](https://boiling-anchorage-63054.herokuapp.com/)
+[Live](https://deploy-preview-1--cocky-curie-63100a.netlify.app/)
 
 ## Author
 
