@@ -1,5 +1,11 @@
-function App() {
-  return <>Welcome</>;
-}
+import BooksForm from '../containers/BooksForm';
+import BooksList from '../containers/BooksList';
+
+const App = () => (
+  <div>
+    <BooksList />
+    <BooksForm />
+  </div>
+);
 
 export default App;
