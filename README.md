@@ -1,4 +1,4 @@
-# Calculator App
+# BookStore App
 
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
@@ -16,7 +16,7 @@ Create a basic react app using `create-react-app ` command
 
 - cd to react-Bookstore
 - run `npm install`
-- run `git checkout feature`
+- run `git checkout milestone2`
 - run `npm start` app opens on [http://localhost:3000](http://localhost:3000)
 
 \
