@@ -16,7 +16,7 @@ Create a basic react app using `create-react-app ` command
 
 - cd to react-Bookstore
 - run `npm install`
-- run `git checkout milestone2`
+- run `git checkout milestone3`
 - run `npm start` app opens on [http://localhost:3000](http://localhost:3000)
 
 \
