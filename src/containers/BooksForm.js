@@ -14,7 +14,7 @@ const categories = [
 
 const BooksForm = () => {
   const dispatch = useDispatch();
-  const handleSubmit = (e) => {
+  const handleChange = (e) => {
     e.preventDefault();
     dispatch(
       createBook({
@@ -25,7 +25,7 @@ const BooksForm = () => {
     e.target.reset();
   };
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleChange}>
       <label htmlFor="title">
         Title:
         <input required type="text" placeholder="Book title" name="title" />
