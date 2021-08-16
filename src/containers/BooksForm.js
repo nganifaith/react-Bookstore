@@ -20,7 +20,7 @@ const BooksForm = () => {
       createBook({
         title: e.target.title.value,
         category: e.target.categories.value,
-      })
+      }),
     );
     e.target.reset();
   };
