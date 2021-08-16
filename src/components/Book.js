@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 
-// eslint-disable-next-line react/prop-types
 const Book = ({ book, handleRemoveBook }) => (
   <tr>
     <td>{book.id}</td>
@@ -20,6 +19,7 @@ Book.propTypes = {
     title: PropTypes.string.isRequired,
     category: PropTypes.string.isRequired,
   }).isRequired,
+  handleRemoveBook: PropTypes.func.isRequired,
 };
 
 export default Book;
