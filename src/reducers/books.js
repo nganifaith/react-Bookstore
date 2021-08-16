@@ -1,6 +1,6 @@
 import { CREATE_BOOK, REMOVE_BOOK } from '../actions';
 
-function BooksReducer(state, action) {
+function BooksReducer(state = { books: [] }, action) {
   switch (action.type) {
     case CREATE_BOOK:
       return {
