@@ -1,4 +1,4 @@
-# Calculator App
+# BookStore App
 
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
