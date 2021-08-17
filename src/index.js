@@ -6,6 +6,11 @@ import './index.css';
 import App from './components/App';
 import reportWebVitals from './reportWebVitals';
 import rootReducers from './reducers';
+import './CSS/index.scss';
+import './CSS/BookList.scss';
+import './CSS/NavBar.scss';
+import './CSS/BookForm.scss';
+import './CSS/Book.scss';
 
 const initialState = [
   { id: 1, title: 'Mama Ojo', category: 'Sci-Fi' },
