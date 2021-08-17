@@ -2,6 +2,7 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 import { createBook } from '../actions';
 import categoryData from '../categoryData';
+import '../css/bookForm.css';
 
 const BooksForm = () => {
   const dispatch = useDispatch();
@@ -16,25 +17,27 @@ const BooksForm = () => {
     e.target.reset();
   };
   return (
-    <form onSubmit={handleChange}>
-      <label htmlFor="title">
-        Title:
-        <input required type="text" placeholder="Book title" name="title" />
-      </label>
-      <label htmlFor="categories">
-        <select id="categories" name="categories" defaultValue={' '}>
-          <option disabled value=" ">
-            {' '}
-          </option>
-          {categoryData.map((category) => (
-            <option value={category} key={category}>
-              {category}
+    <div className="add_form">
+      <h1>ADD NEW BOOK</h1>
+      <form onSubmit={handleChange} className="add_book">
+        <label htmlFor="title">
+          <input required type="text" placeholder="Book title" name="title" />
+        </label>
+        <label htmlFor="categories">
+          <select id="categories" name="categories" defaultValue={' '}>
+            <option disabled value=" ">
+              {' '}
             </option>
-          ))}
-        </select>
-      </label>
-      <button type="submit">Submit</button>
-    </form>
+            {categoryData.map((category) => (
+              <option value={category} key={category}>
+                {category}
+              </option>
+            ))}
+          </select>
+        </label>
+        <button type="submit">ADD BOOK</button>
+      </form>
+    </div>
   );
 };
 
