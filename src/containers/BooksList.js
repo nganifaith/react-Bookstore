@@ -1,8 +1,7 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import Book from '../components/Book';
-import { changeFilter, removeBook } from '../actions';
-import CatergoryFilter from '../components/CategoryFilter';
+import { removeBook } from '../actions';
 
 const selectBooks = (state) => {
   if (!state.filter) {
@@ -16,31 +15,12 @@ const BooksList = () => {
   const handleRemoveBook = (book) => {
     dispatch(removeBook(book));
   };
-  const handleChangeFilter = (filter) => {
-    dispatch(changeFilter(filter));
-  };
+
   return (
-    <div>
-      <CatergoryFilter handleFilterChange={handleChangeFilter} />
-      <table>
-        <thead>
-          <tr>
-            <th>Book ID</th>
-            <th>Title</th>
-            <th>Category</th>
-            <th>Remove Book</th>
-          </tr>
-        </thead>
-        <tbody>
-          {books.map((book) => (
-            <Book
-              book={book}
-              key={book.id}
-              handleRemoveBook={handleRemoveBook}
-            />
-          ))}
-        </tbody>
-      </table>
+    <div className="book-list">
+      {books.map((book) => (
+        <Book book={book} key={book.id} handleRemoveBook={handleRemoveBook} />
+      ))}
     </div>
   );
 };
