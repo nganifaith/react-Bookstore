@@ -15,6 +15,8 @@ import './CSS/Book.scss';
 const initialState = [
   { id: 1, title: 'Mama Ojo', category: 'Sci-Fi' },
   { id: 2, title: 'Alice in Wonderland', category: 'Kids' },
+  { id: 4, title: 'Richest Man in Babylon', category: 'Learning' },
+  { id: 6, title: 'Power of the mind', category: 'History' },
 ];
 
 const store = createStore(rootReducers, { books: initialState });
