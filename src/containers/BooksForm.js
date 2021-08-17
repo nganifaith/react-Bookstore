@@ -1,9 +1,9 @@
 import React from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { createBook } from '../actions';
+import categoryData from '../categoryData';
 
 const BooksForm = () => {
-  const categories = useSelector((state) => state.categories);
   const dispatch = useDispatch();
   const handleChange = (e) => {
     e.preventDefault();
@@ -26,7 +26,7 @@ const BooksForm = () => {
           <option disabled value=" ">
             {' '}
           </option>
-          {categories.map((category) => (
+          {categoryData.map((category) => (
             <option value={category} key={category}>
               {category}
             </option>
