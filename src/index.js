@@ -11,17 +11,8 @@ const initialState = [
   { id: 1, title: 'Mama Ojo', category: 'Sci-Fi' },
   { id: 2, title: 'Alice in Wonderland', category: 'Kids' },
 ];
-const categories = [
-  'Action',
-  'Biography',
-  'History',
-  'Horror',
-  'Kids',
-  'Learning',
-  'Sci-Fi',
-];
 
-const store = createStore(rootReducers, { books: initialState, categories });
+const store = createStore(rootReducers, { books: initialState });
 
 ReactDOM.render(
   <React.StrictMode>
