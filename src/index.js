@@ -11,6 +11,7 @@ const initialState = [
   { id: 1, title: 'Mama Ojo', category: 'Sci-Fi' },
   { id: 2, title: 'Alice in Wonderland', category: 'Kids' },
 ];
+
 const store = createStore(rootReducers, { books: initialState });
 
 ReactDOM.render(

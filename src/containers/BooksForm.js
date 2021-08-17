@@ -1,16 +1,7 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { createBook } from '../actions';
-
-const categories = [
-  'Action',
-  'Biography',
-  'History',
-  'Horror',
-  'Kids',
-  'Learning',
-  'Sci-Fi',
-];
+import categoryData from '../categoryData';
 
 const BooksForm = () => {
   const dispatch = useDispatch();
@@ -35,7 +26,7 @@ const BooksForm = () => {
           <option disabled value=" ">
             {' '}
           </option>
-          {categories.map((category) => (
+          {categoryData.map((category) => (
             <option value={category} key={category}>
               {category}
             </option>
