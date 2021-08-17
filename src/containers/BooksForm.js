@@ -1,18 +1,9 @@
 import React from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { createBook } from '../actions';
 
-const categories = [
-  'Action',
-  'Biography',
-  'History',
-  'Horror',
-  'Kids',
-  'Learning',
-  'Sci-Fi',
-];
-
 const BooksForm = () => {
+  const categories = useSelector((state) => state.categories);
   const dispatch = useDispatch();
   const handleChange = (e) => {
     e.preventDefault();
