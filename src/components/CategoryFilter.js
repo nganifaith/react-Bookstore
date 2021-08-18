@@ -2,22 +2,20 @@ import PropTypes from 'prop-types';
 import categoryData from '../categoryData';
 
 const CatergoryFilter = ({ handleFilterChange }) => (
-  <label htmlFor="category">
-    Filter By Category
-    <select
-      id="category"
-      name="category"
-      defaultValue=""
-      onChange={(e) => handleFilterChange(e.target.value)}
-    >
-      <option value="">ALL</option>
-      {categoryData.map((category) => (
-        <option value={category} key={category}>
-          {category}
-        </option>
-      ))}
-    </select>
-  </label>
+  <select
+    id="category"
+    name="category"
+    placeholder="Catergory"
+    defaultValue=""
+    onChange={(e) => handleFilterChange(e.target.value)}
+  >
+    <option value="">ALL</option>
+    {categoryData.map((category) => (
+      <option value={category} key={category}>
+        {category}
+      </option>
+    ))}
+  </select>
 );
 
 CatergoryFilter.propTypes = {
