@@ -39,7 +39,7 @@ Basic knowledge about React and Redux:
 
 ## Live site
 
-[Live](https://deploy-preview-1--cocky-curie-63100a.netlify.app/)
+[Live](https://deploy-preview-5--cocky-curie-63100a.netlify.app/)
 
 ## Author
 
