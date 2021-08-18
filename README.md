@@ -4,11 +4,25 @@
 
 ## About
 
-Create a basic react app using `create-react-app ` command
+The project implements a simple book store application with the following functionality:
+
+- Display all books in the store with progress
+- Filter books by category
+- Add a new book
+- Remove a book from the store
+
+## Preview
+
+![home](./home.png)
 
 ## Built With
 
 - React
+- Node.js
+- Redux
+- Sass
+- ES6
+- npm
 
 # Setup
 
@@ -19,11 +33,9 @@ Create a basic react app using `create-react-app ` command
 - run `git checkout milestone3`
 - run `npm start` app opens on [http://localhost:3000](http://localhost:3000)
 
-\
-
 ### Prerequisites
 
-Basic knowledge about React:
+Basic knowledge about React and Redux:
 
 ## Live site
 
